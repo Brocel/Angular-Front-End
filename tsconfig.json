@@ -11,6 +11,8 @@
       "@app/feature/*": ["app/feature/*"],
       // import environment variables
       "@env/*": ["environments/*"],
+      // import assets
+      "@ass/*": ["assets/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
