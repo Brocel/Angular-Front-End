@@ -1,6 +1,6 @@
 /*Background*/
 .bGround {
-  background-image: url('@ass/img/background/bg_parchemin.jpg');
+  background-image: url('../../../assets/img/bg_parchemin.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50% 100%;
