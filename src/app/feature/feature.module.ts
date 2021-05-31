@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '@app/shared/shared.module';
 
 import { FeatureRoutingModule } from './feature-routing.module';
 import { UserInfoModule } from './user-info/user-info.module';
@@ -10,7 +10,7 @@ import { GameListModule } from './game-list/game-list.module';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    SharedModule,
     FeatureRoutingModule,
     UserInfoModule,
     CharacterListModule,

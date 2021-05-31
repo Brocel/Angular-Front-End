@@ -1,5 +1,5 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '@app/shared/shared.module';
 import { HomeModule } from '../home/home.module';
 import { FeatureModule } from '../feature/feature.module';
 
@@ -8,7 +8,7 @@ import { FeatureModule } from '../feature/feature.module';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    SharedModule,
     HomeModule,
     FeatureModule
   ]
