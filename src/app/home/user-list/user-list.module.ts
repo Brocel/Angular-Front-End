@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
+import { UserListComponent } from './user-list.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    UserListComponent
+  ],
   imports: [
     SharedModule
   ]
