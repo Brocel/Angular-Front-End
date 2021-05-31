@@ -2,7 +2,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "paths": {
+      // import from app/core, app/shared, app/feature
+      "@app/*": ["app/*"],
+      "@app/core/*": ["app/core/*"],
+      "@app/shared/*": ["app/shared/*"],
+      "@app/feature/*": ["app/feature/*"],
+      // import environment variables
+      "@env/*": ["environments/*"],
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
