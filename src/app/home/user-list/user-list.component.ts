@@ -3,9 +3,9 @@ import { UserService } from "@app/core/service/user.service";
 import { UserImpl } from '@app/shared/model/implementation/user-impl';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  selector: 'app-user-list',
+  templateUrl: './user-list.component.html',
+  styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
 

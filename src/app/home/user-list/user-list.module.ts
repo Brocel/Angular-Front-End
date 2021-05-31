@@ -10,6 +10,9 @@ import { UserListComponent } from '@app/home/user-list/user-list.component';
   ],
   imports: [
     SharedModule
+  ],
+  exports: [
+    UserListComponent
   ]
 })
 export class UserListModule { }

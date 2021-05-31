@@ -10,6 +10,9 @@ import { LoginComponent } from './login.component';
   ],
   imports: [
     SharedModule
+  ],
+  exports: [
+    LoginComponent
   ]
 })
 export class LoginModule { }
