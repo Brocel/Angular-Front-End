@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '@app/shared/shared.module';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LoginModule } from './login/login.module';
@@ -10,7 +10,7 @@ import { UserListModule } from './user-list/user-list.module';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    SharedModule,
     HomeRoutingModule,
     LoginModule,
     RegisterModule,
