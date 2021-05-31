@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
-import { UserListComponent } from './user-list.component';
+import { UserListComponent } from '@app/home/user-list/user-list.component';
 
 
 

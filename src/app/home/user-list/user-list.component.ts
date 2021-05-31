@@ -7,7 +7,7 @@ import { UserImpl } from '@app/shared/model/implementation/user-impl';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserListComponent implements OnInit {
 
   users: UserImpl[];
 
