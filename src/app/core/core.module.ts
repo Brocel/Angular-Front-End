@@ -1,8 +1,9 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
-import { HomeModule } from '../home/home.module';
-import { FeatureModule } from '../feature/feature.module';
+import { HomeModule } from '@app/home/home.module';
+import { FeatureModule } from '@app/feature/feature.module';
 
+import { UserService } from '@app/core/service/user.service';
 
 
 @NgModule({
@@ -11,6 +12,9 @@ import { FeatureModule } from '../feature/feature.module';
     SharedModule,
     HomeModule,
     FeatureModule
+  ],
+  providers:[
+    UserService
   ]
 })
 export class CoreModule {

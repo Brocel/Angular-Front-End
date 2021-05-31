@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '@app/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
 import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UserComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule,
+    SharedModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule
