@@ -6,11 +6,13 @@ import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { UserListModule } from './user-list/user-list.module';
 import { HomeComponent } from './home/home.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HomeBannerComponent
   ],
   imports: [
     SharedModule,
