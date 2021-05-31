@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="container-fluid homeGrid">
+  <div class="homeBan">
+    <app-home-banner></app-home-banner>
+  </div>
+  <div class="logIn">
+    <app-home-login *ngIf="!isAuth"></app-home-login>
+  </div>
+  <div class="register">
+    <app-home-register *ngIf="!isAuth"></app-home-register>
+  </div>
+  <div class="userList">
+    
+  </div>
+</div>

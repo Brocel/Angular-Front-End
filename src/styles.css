@@ -58,3 +58,32 @@ cursor: pointer;
 .material-icons.md-dark-grey:hover {
 color: rgb(65, 65, 65) !important;
 }
+/*Home style */
+.homeGrid {
+  display: grid;
+  align-items: center;
+  padding: 3%;
+  grid-gap: 1%;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-template-rows: 1fr, 2fr, 1fr;
+  grid-template-areas:
+  "homeBan" "homeBan"
+  "logIn" "register"
+  "userList" "userList";
+}
+.homeBan {
+  grid-area: homeBan;
+  justify-content: center;
+}
+.logIn {
+  grid-area: logIn;
+  justify-content: center;
+}
+.register {
+  grid-area: register;
+  justify-content: center;
+}
+.userList {
+  grid-area: userList;
+  justify-content: center;
+}
