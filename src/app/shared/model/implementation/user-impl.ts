@@ -2,7 +2,7 @@ import { User } from '@app/shared/model/interface/user';
 
 export class UserImpl implements User {
 
-  readonly id: string;
+  readonly id: number;
   firstName: string;
   lastName: string;
   userName: string;
@@ -14,7 +14,7 @@ export class UserImpl implements User {
   password: string;
 
   constructor(options:{
-    id?: string;
+    id?: number;
     firstName?: string;
     lastName?: string;
     userName?: string;
@@ -25,7 +25,7 @@ export class UserImpl implements User {
     city?: string;
     password?: string;
   } = {}) {
-    this.id = options.id || '';
+    this.id = options.id || 0;
     this.firstName = options.firstName || '';
     this.lastName = options.lastName || '';
     this.userName = options.userName || '';
