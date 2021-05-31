@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
 }
 body {
   height: 100%;
@@ -43,7 +43,7 @@ font-feature-settings: 'liga';
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
-/* Règles pour définir différentes couleurs aux icônes. 
+/* Règles pour définir différentes couleurs aux icônes.
 .material-icons.md-grey {
 color: rgb(155, 155, 155);
 cursor: pointer;
@@ -64,12 +64,12 @@ color: rgb(65, 65, 65) !important;
   align-items: center;
   padding: 3%;
   grid-gap: 1%;
-  grid-template-columns: repeat(2,1fr) ;
-  grid-template-rows: 1fr, 2fr, 1fr;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
   grid-template-areas:
-  "homeBan" "homeBan"
-  "logIn" "register"
-  "userList" "userList";
+  "homeBan homeBan"
+  "logIn register"
+  "userList userList";
 }
 .homeBan {
   grid-area: homeBan;
