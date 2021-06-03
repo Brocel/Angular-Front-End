@@ -3,20 +3,21 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
-import { AuthService, AlertService } from '@app/core/services/*';
+import { AuthService } from '@app/core/service/auth.service';
+import { AlertService } from '@app/core/service/alert.service';
 
 @Component({ templateUrl: 'login.component.html' })
 export class LoginComponent implements OnInit {
-    form: FormGroup;
+    form?: FormGroup;
     loading = false;
     submitted = false;
-    returnUrl: string;
+    returnUrl?: string;
 
     constructor(
         private formBuilder: FormBuilder,
         private route: ActivatedRoute,
         private router: Router,
-        private accountService: AccountService,
+        private authService: AuthService,
         private alertService: AlertService
     ) { }
 
@@ -31,7 +32,7 @@ export class LoginComponent implements OnInit {
     }
 
     // convenience getter for easy access to form fields
-    get f() { return this.form.controls; }
+    get f() { return this.form?.controls; }
 
     onSubmit() {
         this.submitted = true;
@@ -40,12 +41,12 @@ export class LoginComponent implements OnInit {
         this.alertService.clear();
 
         // stop here if form is invalid
-        if (this.form.invalid) {
+        if (this.form?.invalid) {
             return;
         }
 
         this.loading = true;
-        this.accountService.login(this.f.username.value, this.f.password.value)
+        this.authService.login(this.f?.username.value, this.f?.password.value)
             .pipe(first())
             .subscribe(
                 data => {
