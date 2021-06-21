@@ -9,14 +9,14 @@ export class JwtClientService {
   constructor(private httpClient: HttpClient) { }
 
 
-  public generateToken(request:any) {
-    return this.httpClient.post<string>("http://localhost:8080/authenticate", request, {  responseType: 'text' as 'json' });
-  }
-
-
-  public welcome(token:any) {
-    let tokenStr = 'Bearer ' + token;
-    const headers = new HttpHeaders().set('Authorization', tokenStr);
-    return this.httpClient.get<string>("http://localhost:8080/", {headers, responseType: 'text' as 'json' });
-  }
+  // public generateToken(request:any) {
+  //   return this.httpClient.post<string>("http://localhost:8080/authenticate", request, {  responseType: 'text' as 'json' });
+  // }
+  //
+  //
+  // public welcome(token:any) {
+  //   let tokenStr = 'Bearer ' + token;
+  //   const headers = new HttpHeaders().set('Authorization', tokenStr);
+  //   return this.httpClient.get<string>("http://localhost:8080/", {headers, responseType: 'text' as 'json' });
+  // }
 }
