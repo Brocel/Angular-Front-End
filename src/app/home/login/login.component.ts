@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     checkLogin() {
     if (this.loginService.authenticate(this.username, this.password)
     ) {
-      this.router.navigate(['featuresHome'])
+      this.router.navigate(['/feature/featuresHome'])
       this.invalidLogin = false
     } else
       this.invalidLogin = true
