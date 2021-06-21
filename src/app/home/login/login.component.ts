@@ -12,5 +12,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // TODO : dev login logic
+  // TODO : dev login logic hard coded
+  
 }
