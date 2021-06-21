@@ -4,6 +4,7 @@ import { HomeModule } from '@app/home/home.module';
 import { FeatureModule } from '@app/feature/feature.module';
 
 import { UserService } from '@app/core/service/user.service';
+import { AuthService } from '@app/core/service/auth.service';
 import { NavbarComponent } from './component/navbar/navbar.component';
 
 
@@ -17,7 +18,8 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     FeatureModule
   ],
   providers:[
-    UserService
+    UserService,
+    AuthService
   ],
   exports: [
     NavbarComponent
