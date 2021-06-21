@@ -11,24 +11,27 @@ import { AuthService } from '@app/core/service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-    form?: FormGroup;
-    loading = false;
-    submitted = false;
-    returnUrl?: string;
-    authRequest:any={
-    "userName":"",
-    "password":""
-    };
-    response:any;
 
-    constructor(
+    username = ''
+    password = ''
+    invalidLogin = false
+    // authRequest:any={
+    // userName:'',
+    // password:''
+    // };
+    // response:any;
 
-    ) { }
+    constructor( private router: Router, private loginService: AuthService ) { }
 
-    ngOnInit() {
+    ngOnInit() { }
 
-
+    checkLogin() {
+    if (this.loginService.authenticate(this.username, this.password)
+    ) {
+      this.router.navigate([''])
+      this.invalidLogin = false
+    } else
+      this.invalidLogin = true
     }
 
-    
 }
