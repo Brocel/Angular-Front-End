@@ -4,10 +4,13 @@ import { HomeModule } from '@app/home/home.module';
 import { FeatureModule } from '@app/feature/feature.module';
 
 import { UserService } from '@app/core/service/user.service';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NavbarComponent
+  ],
   imports: [
     SharedModule,
     HomeModule,
@@ -15,6 +18,9 @@ import { UserService } from '@app/core/service/user.service';
   ],
   providers:[
     UserService
+  ],
+  exports: [
+    NavbarComponent
   ]
 })
 export class CoreModule {
