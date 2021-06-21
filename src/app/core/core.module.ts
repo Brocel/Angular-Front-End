@@ -4,10 +4,17 @@ import { HomeModule } from '@app/home/home.module';
 import { FeatureModule } from '@app/feature/feature.module';
 
 import { UserService } from '@app/core/service/user.service';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { LogoutComponent } from './component/logout/logout.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    LogoutComponent
+  ],
   imports: [
     SharedModule,
     HomeModule,
