@@ -10,6 +10,6 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(username:string, password:string) {
-    return this.http.post<UserImpl>('http://localhost:8080/api/authenticate', {username, password});
+    return this.http.post<UserImpl>('http://localhost:8080/api/auth', {username, password});
   }
 }
