@@ -27,11 +27,10 @@ html, body { height: 100vh; }
   padding: 3%;
   grid-gap: 1%;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-template-areas:
   "homeBan homeBan"
-  "logIn register"
-  "userList userList";
+  "logIn register";
 }
 .homeBan {
   grid-area: homeBan;
@@ -43,9 +42,5 @@ html, body { height: 100vh; }
 }
 .register {
   grid-area: register;
-  justify-content: center;
-}
-.userList {
-  grid-area: userList;
   justify-content: center;
 }

@@ -4,7 +4,6 @@ import { SharedModule } from '@app/shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
-import { UserListModule } from './user-list/user-list.module';
 import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 
@@ -18,8 +17,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     SharedModule,
     HomeRoutingModule,
     LoginModule,
-    RegisterModule,
-    UserListModule
+    RegisterModule
   ]
 })
 export class HomeModule { }
