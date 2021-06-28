@@ -8,6 +8,8 @@ import { AuthService } from '@app/core/service/auth.service';
 
 import { NavbarComponent } from './component/navbar/navbar.component';
 
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { NavbarComponent } from './component/navbar/navbar.component';
   ],
   providers:[
     UserService,
-    AuthService
+    AuthService,
+    authInterceptorProviders
   ],
   exports: [
     NavbarComponent
