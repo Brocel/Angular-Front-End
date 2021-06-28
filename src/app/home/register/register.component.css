@@ -1,0 +1,50 @@
+.registerFormGrid {
+  height: 90%;
+  display: grid;
+  align-items: center;
+  padding: 3%;
+  grid-gap: 1%;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas:
+  "fName lName uName"
+  "eMail eMail age "
+  "country state city "
+  "pwd pwd pwd";
+}
+.fName {
+  grid-area: fName;
+  justify-content: center;
+}
+.lName {
+  grid-area: lName;
+  justify-content: center;
+}
+.uName {
+  grid-area: uName;
+  justify-content: center;
+}
+.eMail {
+  grid-area: eMail;
+  justify-content: center;
+}
+.age {
+  grid-area: age;
+  justify-content: center;
+}
+.country {
+  grid-area: country;
+  justify-content: center;
+}
+.state {
+  grid-area: state;
+  justify-content: center;
+}
+.city {
+  grid-area: city;
+  justify-content: center;
+}
+.pwd {
+  grid-area: pwd;
+  justify-content: center;
+}
