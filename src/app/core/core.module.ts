@@ -5,6 +5,7 @@ import { FeatureModule } from '@app/feature/feature.module';
 
 import { UserService } from '@app/core/service/user.service';
 import { AuthService } from '@app/core/service/auth.service';
+import { RoleService } from '@app/core/service/role.service'
 
 import { NavbarComponent } from './component/navbar/navbar.component';
 
@@ -23,7 +24,8 @@ import { authInterceptorProviders } from './helpers/auth.interceptor';
   providers:[
     UserService,
     AuthService,
-    authInterceptorProviders
+    authInterceptorProviders,
+    RoleService
   ],
   exports: [
     NavbarComponent
