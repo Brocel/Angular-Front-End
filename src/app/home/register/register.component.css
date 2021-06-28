@@ -10,7 +10,7 @@
   "fName lName uName"
   "eMail eMail age "
   "country state city "
-  "pwd pwd pwd";
+  "pwd pwd signUp";
 }
 .fName {
   grid-area: fName;
@@ -46,5 +46,9 @@
 }
 .pwd {
   grid-area: pwd;
+  justify-content: center;
+}
+.signUp {
+  grid-area: signUp;
   justify-content: center;
 }
