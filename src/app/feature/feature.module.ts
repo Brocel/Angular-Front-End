@@ -6,6 +6,7 @@ import { UserInfoModule } from './user-info/user-info.module';
 import { CharacterListModule } from './character-list/character-list.module';
 import { GameListModule } from './game-list/game-list.module';
 import { UserListModule } from './user-list/user-list.module';
+import { BoardModule } from './board/board.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { UserListModule } from './user-list/user-list.module';
     UserInfoModule,
     CharacterListModule,
     GameListModule,
-    UserListModule
+    UserListModule,
+    BoardModule
   ]
 })
 export class FeatureModule { }
